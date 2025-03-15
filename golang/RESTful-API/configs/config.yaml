@@ -1,0 +1,18 @@
+server:
+  Addr: 0.0.0.0  # 服务器监听的地址，0.0.0.0 表示监听所有可用的网络接口
+  Port: 8008  # 服务器运行的端口号
+
+db:
+  DriverName: mysql  # 数据库驱动类型，使用 MySQL
+  Database: railway  # 连接的数据库名称
+  Port: 19187  # MySQL 服务器端口，默认 3306
+  UserName: root  # 数据库用户名
+  Password: qkttdmVAGsIcbwqBePQPriKNoCeCasFZ  # 数据库密码
+  Host: monorail.proxy.rlwy.net  # 数据库主机地址，在 Docker 内部可以使用 `host.docker.internal` 访问宿主机 MySQL，或者用 `127.0.0.1` 访问本机
+  Charset: utf8mb4  # 设置数据库字符集，`utf8mb4` 兼容所有 UTF-8 字符，包括表情符
+
+# token 签发配置
+token:
+  shortDuration: 30   # 短期 token 的有效期（单位：分钟），用户多久无操作会自动退出
+  refreshDuration: 5  # token 续签间隔（单位：分钟），系统每隔多久自动刷新 token
+  longDuration: 1440  # 长期 token 的有效期（单位：分钟），1440 分钟（24 小时）后必须重新登录
