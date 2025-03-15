@@ -7,7 +7,7 @@ import (
 
 func Start() {
 	fmt.Println("============================server start=====================================")
-	viper.AddConfigPath("./configs/")
+	viper.AddConfigPath("./golang/RESTful-API/configs/")
 	viper.SetConfigName("config")
 	viper.SetConfigType("yaml")
 
