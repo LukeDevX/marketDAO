@@ -12,7 +12,7 @@ evm、solana、ton
 
 #### 后端
 
-go
+go、java、rust
 
 #### 中间件
 
