@@ -4,7 +4,6 @@ import (
 	"MarketDAO/cmd"
 	"MarketDAO/mysql_db"
 	"fmt"
-	"github.com/spf13/viper"
 )
 
 type User struct {
@@ -24,8 +23,9 @@ func main() {
 		fmt.Println("Error connecting to database:", err)
 		return
 	}
-	err = db.AutoMigrate(&mysql_db.CrudList{})
-	err = db.AutoMigrate(&mysql_db.UserList{})
+	fmt.Println(db, err)
+	//err = db.AutoMigrate(&mysql_db.CrudList{})
+	//err = db.AutoMigrate(&mysql_db.UserList{})
 
 	/*
 		//users := []User{{ID: 123, Name: "张三丰"}, {ID: 456, Name: "张无忌"}}
@@ -101,5 +101,5 @@ func main() {
 
 	*/
 	//r.Run(":8081")
-	r.Run(viper.GetString("server.addr") + ":" + viper.GetString("server.port"))
+	//r.Run(viper.GetString("server.addr") + ":" + viper.GetString("server.port"))
 }

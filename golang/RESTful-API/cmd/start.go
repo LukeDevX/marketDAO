@@ -7,7 +7,7 @@ import (
 
 func Start() {
 	fmt.Println("============================server start=====================================")
-	viper.AddConfigPath("./conf/")
+	viper.AddConfigPath("./configs/")
 	viper.SetConfigName("config")
 	viper.SetConfigType("yaml")
 
