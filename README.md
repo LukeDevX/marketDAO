@@ -14,6 +14,11 @@ evm、solana、ton
 
 go、java、rust
 
+go
+配置文件：ini、yarm  
+orm: gorm  
+日志：logrus
+
 #### 中间件
 
 readis、MQ、mysql
@@ -22,6 +27,9 @@ readis、MQ、mysql
 
 react
 
+### 问题汇总
+#### golang
++ [ ] 1  如何在 ini 读取mysql配置文件时，不使用默认的 prod ，切换为 dev(config.go 84)
 
 
 ## 功能列表
@@ -38,7 +46,7 @@ react
 
 ## 项目周期（15）
 
-+ [x] + [x] + [x] + [ ] + [ ] 
++ [x] + [x] + [x] + [x] + [ ] 
 
 + [ ] + [ ] + [ ] + [ ] + [ ] 
 

@@ -22,7 +22,9 @@ func init() {
 		configsDirname = "/configs" // 定义配置文件所在的目录
 		configPath     string       // 存储实际的配置文件路径。
 	)
+
 	workPath, err := os.Getwd() // 使用 os.Getwd() 函数获取存储当前工作目录。如果获取当前工作目录失败，程序会直接崩溃（使用 panic）。
+	//fmt.Println("workPath", workPath)
 	if err != nil {
 		panic(err)
 	}

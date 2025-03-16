@@ -1,9 +1,7 @@
 package main
 
 import (
-	"MarketDAO/cmd"
-	"MarketDAO/mysql_db"
-	"fmt"
+	_ "RESTful-API/bootstrap" // 只执行 bootstrap 的 init()，不直接使用包内函数
 )
 
 type User struct {
@@ -14,16 +12,16 @@ type User struct {
 
 func main() {
 
-	//配置相关
-	defer cmd.Clean()
-	cmd.Start()
-
-	db, err := mysql_db.ConnectToDatabase()
-	if err != nil {
-		fmt.Println("Error connecting to database:", err)
-		return
-	}
-	fmt.Println(db, err)
+	////配置相关
+	//defer cmd.Clean()
+	//cmd.Start()
+	//
+	//db, err := utils.ConnectToDatabase()
+	//if err != nil {
+	//	fmt.Println("Error connecting to database:", err)
+	//	return
+	//}
+	//fmt.Println(db, err)
 	//err = db.AutoMigrate(&mysql_db.CrudList{})
 	//err = db.AutoMigrate(&mysql_db.UserList{})
 
