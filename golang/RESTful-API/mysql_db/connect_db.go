@@ -28,7 +28,7 @@ func ConnectToDatabase() (*gorm.DB, error) {
 
 	// 使用 GORM 连接 MySQL 数据库
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{
-		NamingStrategy: schema.NamingStrategy{
+		NamingStrategy: schema.NamingStrategy{ // 增加单数策略
 			SingularTable: true, // 设置表名为单数形式，例如 `user` 而不是 `users`
 		},
 	})
