@@ -1,9 +1,10 @@
 package bootstrap
 
 import (
+	constants "RESTful-API/internal/constants"
+	"RESTful-API/internal/model"
 	"RESTful-API/utils/config"
 	"RESTful-API/utils/logs"
-
 	"fmt"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
