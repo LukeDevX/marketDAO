@@ -1,12 +1,14 @@
 package bootstrap
 
 import (
+	"RESTful-API/utils/config"
+	"RESTful-API/utils/logs"
+
 	"fmt"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 	"log"
-	"marketDAO/golang/RESTful-API/utils/config"
 	"net/url"
 	"os"
 	"sync"
