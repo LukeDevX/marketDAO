@@ -1,8 +1,9 @@
-package mysql_db
+package utils
 
 // package main // 这个注释掉的行表示该文件原本可以作为独立的 Go 可执行程序，但目前作为包导入使用
 
 import (
+	"RESTful-API/internal/model"
 	"fmt"                    // 标准库，提供格式化 I/O 功能，例如打印日志和调试输出
 	"github.com/spf13/viper" // Viper 库，用于读取和解析配置文件（支持 YAML、JSON、TOML 等）
 	"gorm.io/driver/mysql"   // GORM 的 MySQL 连接驱动，用于连接 MySQL 数据库
@@ -72,7 +73,7 @@ func main() {
 	}
 
 	// 数据库迁移（创建 `CrudList` 表）
-	err = db.AutoMigrate(&CrudList{})
+	err = db.AutoMigrate(&model.CrudList{})
 	if err != nil {
 		fmt.Println("Error migrating database:", err)
 	}
