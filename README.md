@@ -14,11 +14,13 @@ evm、solana、ton
 
 go、java、rust
 
-go
+go  
 配置文件：ini、yarm  
-orm: gorm
+orm: gorm  
 日志：logrus  
 微服务: grpc
+
+rust  
 
 #### 中间件
 
