@@ -16,8 +16,9 @@ go、java、rust
 
 go
 配置文件：ini、yarm  
-orm: gorm  
-日志：logrus
+orm: gorm
+日志：logrus  
+微服务: grpc
 
 #### 中间件
 
