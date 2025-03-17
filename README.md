@@ -22,6 +22,8 @@ orm: gorm
 
 rust  
 
+java  
+
 #### 中间件
 
 readis、MQ、mysql
