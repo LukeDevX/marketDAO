@@ -10,7 +10,7 @@ type UsersModel struct {
 	//ArtBalance    float64 `json:"art_balance" gorm:"column:art_balance"`
 	//UserType      int8    `json:"user_type" gorm:"column:user_type"`
 	//LoginIP       string  `json:"login_ip" gorm:"column:login_ip"`
-	CreateAt  string `json:"create_time" gorm:"column:create_at"`
-	UpdateAt  string `json:"update_time" gorm:"column:update_at"`
-	BaseModel `json:"-" gorm:"-"`
+	CreateAt  string              `json:"create_time" gorm:"column:create_at"`
+	UpdateAt  string              `json:"update_time" gorm:"column:update_at"`
+	BaseModel `json:"-" gorm:"-"` // 继承基础模型
 }
