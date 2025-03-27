@@ -1,6 +1,7 @@
 package model
 
 type UsersModel struct {
+	// gorm.Model // 引入模板结构体  ID, CreatedAt, UpdatedAt, DeletedAt
 	ID           int64  `json:"id" gorm:"primary_key;column:id"`
 	UserName     int64  `json:"username" gorm:"column:username"`
 	Email        string `json:"email" gorm:"column:email"`

@@ -126,5 +126,8 @@ func initDB() {
 		// 记录数据库启动完成日志
 		logs.Info("DB Finished Start %v", dsn)
 		fmt.Println("Start dsn", dsn)
+
+		// 数据库自动迁移
+		db.AutoMigrate()
 	}
 }
